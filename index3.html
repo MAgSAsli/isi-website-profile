@@ -1,62 +1,285 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- navbar-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO CAROUSEL -->
+  <section class="hero-carousel">
+    <div class="carousel-container">
+      <div class="carousel-slide active">
+        <h1>Selamat Datang di <span class="highlight">TechSphere</span></h1>
+        <p>Komunitas coding yang seru, kreatif, dan penuh eksplorasi.</p>
+      </div>
+      <div class="carousel-slide">
+        <h1>Belajar & Bangun Proyek</h1>
+        <p>Dari HTML dasar sampai bikin game bareng tim kamu sendiri.</p>
+      </div>
+      <div class="carousel-slide">
+        <h1>Kolaborasi & Kompetisi</h1>
+        <p>Ikut hackathon mini, workshop, dan tantangan coding mingguan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!--about us section-->
+  <div class="container my-5 p-4 rounded shadow" style="background-color: #f8f9fa;">
+    <h2 class="mb-3" style="color: black;">Tentang Kita</h2>
+    <p style="font-size: 18px; line-height: 1.6; color: black;">
+      Welcome to our website! We are committed to delivering high-quality services and innovative solutions tailored to
+      your needs.
+      Our team of professionals is passionate about creating value and ensuring customer satisfaction.
+      Together, we strive to achieve excellence and make a positive impact in everything we do.
+    </p>
+    <p style="font-size: 18px; line-height: 1.6; color: black;">
+      Join us on this exciting journey as we continue to grow, innovate, and make a difference.
+      Your trust and support inspire us to reach new heights and deliver exceptional results.
+    </p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <!-- kelas pilihan section -->
+  <div class="container my-5">
+    <h2 class="mb-4 text-center">Kelas Kita</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+      <!-- Website -->
+      <div class="col">
+        <div class="card h-100 text-center shadow-sm">
+          <img
+            src="https://images.shiksha.com/mediadata/ugcDocuments/images/wordpressImages/2021_12_Programming-vs-Web-Development.jpg"
+            class="card-img-top" alt="Kelas Website">
+          <div class="card-body">
+            <h5 class="card-title">Website</h5>
+            <p class="card-text">Belajar bikin website interaktif pakai HTML, CSS, dan JavaScript.</p>
+            <a href="kelas-website.html" class="btn btn-outline-primary">Lihat Detail</a>
           </div>
         </div>
-      </nav>
+      </div>
 
-    <!--about us-->
-    <div class="container my-5 p-4 rounded shadow" style="background-color: #f8f9fa;">
-        <h2 class="mb-3" style="color: black;">About Us</h2>
-        <p style="font-size: 18px; line-height: 1.6; color: black;">
-            Welcome to our website! We are committed to delivering high-quality services and innovative solutions tailored to your needs. 
-            Our team of professionals is passionate about creating value and ensuring customer satisfaction. 
-            Together, we strive to achieve excellence and make a positive impact in everything we do.
-        </p>
-        <p style="font-size: 18px; line-height: 1.6; color: black;">
-            Join us on this exciting journey as we continue to grow, innovate, and make a difference. 
-            Your trust and support inspire us to reach new heights and deliver exceptional results.
-        </p>
+      <!-- Robotika -->
+      <div class="col">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="https://awsimages.detik.net.id/community/media/visual/2022/04/12/robot-canggih-1.jpeg?w=1200"
+            class="card-img-top" alt="Kelas Robotika">
+          <div class="card-body">
+            <h5 class="card-title">Robotika</h5>
+            <p class="card-text">Eksplorasi dunia robot, sensor, dan mikrokontroler dengan proyek nyata.</p>
+            <a href="kelas-robotika.html" class="btn btn-outline-primary">Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Esport -->
+      <div class="col">
+        <div class="card h-100 text-center shadow-sm">
+          <img
+            src="https://www.e-resident.gov.ee/wp-content/uploads/2022/10/what-is-esports-eResidency-1-1-1024x682.jpg"
+            class="card-img-top" alt="Kelas Esport">
+          <div class="card-body">
+            <h5 class="card-title">Esport</h5>
+            <p class="card-text">Belajar strategi, teamwork, dan analisis game kompetitif secara profesional.</p>
+            <a href="kelas-esport.html" class="btn btn-outline-primary">Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Android -->
+      <div class="col">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSse4lIUfC1N3dBiaco7UWs6j_FRHtJ3ARp_Q&s"
+            class="card-img-top" alt="Kelas Android">
+          <div class="card-body">
+            <h5 class="card-title">Android</h5>
+            <p class="card-text">Bikin aplikasi Android sendiri pakai Kotlin atau Java, dari desain sampai publish.</p>
+            <a href="kelas-android.html" class="btn btn-outline-primary">Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+  </div>
+
+  <!-- Highlight -->
+  <section style="background-color: #1c1c1c; color: #fff; padding: 60px 20px;">
+    <div class="container text-center">
+      <h2 class="mb-4">Kenapa Harus Gabung UCC?</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <h5>💡 Belajar Langsung</h5>
+          <p>Mentor dari alumni dan praktisi industri siap bantu kamu berkembang.</p>
+        </div>
+        <div class="col">
+          <h5>🤝 Komunitas Solid</h5>
+          <p>Kolaborasi lintas kelas, proyek bareng, dan diskusi seru tiap minggu.</p>
+        </div>
+        <div class="col">
+          <h5>🚀 Proyek Nyata</h5>
+          <p>Dari website, robot, sampai app Android—semua bisa kamu bangun sendiri.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECENT PROJECTS  -->
+  <div class="container-fluid py-5" style="background-color: #f2f2f2;">
+    <div class="container">
+      <h2 class="text-center mb-4">Projek Terkini</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/project-website.jpg" class="card-img-top" alt="Website Branding Komunitas">
+            <div class="card-body">
+              <h5 class="card-title">Website Branding Komunitas</h5>
+              <p class="card-text">Proyek dari kelas Website dengan esensi komunitas dan desain interaktif.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/project-robotika.jpg" class="card-img-top" alt="Line Follower Robot">
+            <div class="card-body">
+              <h5 class="card-title">Line Follower Robot</h5>
+              <p class="card-text">Proyek dari kelas Robotika: robot sederhana dengan sensor inframerah.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/project-esport.jpg" class="card-img-top" alt="Valorant Strategy Map">
+            <div class="card-body">
+              <h5 class="card-title">Valorant Strategy Map</h5>
+              <p class="card-text">Proyek dari kelas Esport: peta strategi untuk permainan kompetitif.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/project-android.jpg" class="card-img-top" alt="Aplikasi Reminder Coding">
+            <div class="card-body">
+              <h5 class="card-title">Aplikasi Reminder Coding</h5>
+              <p class="card-text">Proyek dari kelas Android: app sederhana untuk tracking waktu belajar coding.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- PROKER KAMI-->
+  <div class="container-fluid py-5" style="background-color: #f2f2f2;">
+    <div class="container">
+      <h2 class="text-center mb-4">Program Kerja Kami</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <!-- card 1 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/event-hackathon.jpg" class="card-img-top" alt="Hackathon Mini">
+            <div class="card-body">
+              <h5 class="card-title">Hackathon Mini</h5>
+              <p class="card-text">📅 12 Agustus 2025<br>💡 Kelas Website & Android</p>
+              <p class="card-text">Kompetisi bikin proyek dalam 6 jam. Tim terbaik membuat aplikasi reminder coding!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/event-robotika.jpg" class="card-img-top" alt="Workshop Robotika">
+            <div class="card-body">
+              <h5 class="card-title">Workshop Robotika</h5>
+              <p class="card-text">📅 28 Juli 2025<br>🔧 Kelas Robotika</p>
+              <p class="card-text">Belajar dasar sensor dan mikrokontroler. Peserta berhasil merakit robot line
+                follower!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/event-esport.jpg" class="card-img-top" alt="Turnamen Esport">
+            <div class="card-body">
+              <h5 class="card-title">Turnamen Esport Internal</h5>
+              <p class="card-text">📅 5 September 2025<br>🎮 Kelas Esport</p>
+              <p class="card-text">Kompetisi Valorant antar tim ekskul. Fokus pada strategi, teamwork, dan analisis map.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 Umaha Coders Community.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
