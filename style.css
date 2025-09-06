@@ -1,0 +1,184 @@
+/* RESET & GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* SECTION STANDARDIZATION */
+section {
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR */
+.navbar {
+  z-index: 1000;
+}
+
+/* HERO CAROUSEL */
+.hero-carousel {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  color: #fff;
+  overflow: hidden;
+
+  background: linear-gradient(to right, rgba(15, 32, 39, 0.8), rgba(44, 83, 100, 0.8)),
+              url('https://cdn.buttercms.com/resize=w:1600,h:900,fit:crop/cpu8yCigTnagZdCKeB3b');
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(4px);
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  padding: 0 20px;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+.highlight {
+  color: #00ffff;
+}
+
+/* ABOUT US - FIXED */
+.about-section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  overflow: hidden; /* Tambahkan ini */
+}
+
+.about-section .container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.about-section .row {
+  margin: 0;
+  display: flex; /* Tambahkan flexbox */
+  align-items: stretch; /* Pastikan kedua kolom sama tinggi */
+}
+
+.about-section .col-lg-6 {
+  padding: 0;
+  display: flex; /* Tambahkan flexbox */
+}
+
+/* Text Box */
+.text-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  min-height: auto; /* Ubah dari 100vh atau 500px */
+}
+
+/* Image Box - FIXED */
+.image-box {
+  height: 50vh; /* Ubah dari fixed height */
+  overflow: hidden;
+  display: flex;
+  align-items: center; /* Pusatkan gambar vertikal */
+}
+
+.img-full {
+  width: 100%;
+  height: 100%; /* Biarkan tinggi mengikuti kontainer */
+  object-fit: cover;
+  display: block;
+}
+
+/* KELAS KITA SECTION */
+.kelas-section {
+  background-color: #fff;
+  padding-bottom: 80px;
+}
+
+.kelas-header {
+  background-color: #252729; /* warna biru elegan */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.kelas-header h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.kelas-header p {
+  font-size: 16px;
+  color: #e0e0e0;
+  margin-bottom: 0;
+}
+
+.kelas-content {
+  margin-top: -40px; /* tarik ke atas biar nyatu */
+}
+
+.kelas-card {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.kelas-card:hover {
+  transform: translateY(-5px);
+}
+
+.kelas-icon {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.kelas-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #203a43;
+  margin-bottom: 10px;
+}
+
+.kelas-desc {
+  font-size: 14px;
+  color: #555;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #0f2027;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
