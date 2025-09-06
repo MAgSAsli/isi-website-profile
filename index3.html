@@ -15,144 +15,135 @@
 
 <body>
 
-  <!-- navbar-->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
+  <!-- NAVBAR + HERO CAROUSEL -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoXUAj_Bgl179pVOxCz_Jow41ODvAYiP9TPA&s"
+            alt="UCC Logo" height="40" class="me-2" />
+          UCC
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <!-- HERO CAROUSEL -->
-  <section class="hero-carousel">
-    <div class="carousel-container">
-      <div class="carousel-slide active">
-        <h1>Selamat Datang di <span class="highlight">TechSphere</span></h1>
-        <p>Komunitas coding yang seru, kreatif, dan penuh eksplorasi.</p>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="carousel-slide">
-        <h1>Belajar & Bangun Proyek</h1>
-        <p>Dari HTML dasar sampai bikin game bareng tim kamu sendiri.</p>
+    </nav>
+
+    <section class="hero-carousel">
+      <div class="carousel-container">
+        <div class="carousel-slide active">
+          <h1>Selamat Datang di <span class="highlight">Umaha Coders Community</span></h1>
+          <p>Komunitas coding yang seru, kreatif, dan penuh eksplorasi.</p>
+        </div>
+        <div class="carousel-slide">
+          <h1>Belajar & Bangun Proyek</h1>
+          <p>Dari HTML dasar sampai bikin game bareng tim kamu sendiri.</p>
+        </div>
+        <div class="carousel-slide">
+          <h1>Kolaborasi & Kompetisi</h1>
+          <p>Ikut hackathon mini, workshop, dan tantangan coding mingguan.</p>
+        </div>
       </div>
-      <div class="carousel-slide">
-        <h1>Kolaborasi & Kompetisi</h1>
-        <p>Ikut hackathon mini, workshop, dan tantangan coding mingguan.</p>
+    </section>
+  </header>
+
+
+  <!-- ABOUT US SECTION -->
+  <section id="about" class="about-section">
+    <div class="container-fluid">
+      <div class="row g-0">
+        <!-- Text Column -->
+        <div class="col-lg-6 d-flex align-items-center justify-content-center text-box">
+          <div class="text-content text-center px-4 px-lg-5">
+            <h2 class="section-title mb-4">Tentang Kami</h2>
+            <p class="section-description">
+              UCC (Umaha Coders Community) adalah komunitas teknologi yang berfokus pada pembelajaran, kolaborasi, dan
+              eksplorasi dunia pemrograman. Kami percaya bahwa semangat belajar bersama, berbagi ide, dan membangun
+              proyek nyata adalah kunci untuk tumbuh sebagai developer yang kreatif dan berdampak. Bergabunglah dengan
+              kami untuk menciptakan karya, mengikuti event coding, dan menjadi bagian dari komunitas yang saling
+              mendukung.
+            </p>
+          </div>
+        </div>
+
+        <!-- Image Column -->
+        <div class="col-lg-6 image-box">
+          <div class="image-overlay"></div>
+          <img src="https://kinsta.com/wp-content/uploads/2021/11/about-us-page-1024x512.png"
+            alt="UCC Office" class="img-full" />
+        </div>
       </div>
     </div>
   </section>
 
-  <!--about us section-->
-  <div class="container my-5 p-4 rounded shadow" style="background-color: #f8f9fa;">
-    <h2 class="mb-3" style="color: black;">Tentang Kita</h2>
-    <p style="font-size: 18px; line-height: 1.6; color: black;">
-      Welcome to our website! We are committed to delivering high-quality services and innovative solutions tailored to
-      your needs.
-      Our team of professionals is passionate about creating value and ensuring customer satisfaction.
-      Together, we strive to achieve excellence and make a positive impact in everything we do.
-    </p>
-    <p style="font-size: 18px; line-height: 1.6; color: black;">
-      Join us on this exciting journey as we continue to grow, innovate, and make a difference.
-      Your trust and support inspire us to reach new heights and deliver exceptional results.
-    </p>
+<!-- KELAS SECTION -->
+<section id="kelas" class="kelas-section">
+  <!-- Header Biru -->
+  <div class="kelas-header text-center">
+    <h2 class="kelas-heading">Kelas Kita</h2>
+    <p class="kelas-subtext">Pilih kelas sesuai minatmu dan mulai eksplorasi dunia teknologi bersama komunitas UCC.</p>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
 
-  <!-- kelas pilihan section -->
-  <div class="container my-5">
-    <h2 class="mb-4 text-center">Kelas Kita</h2>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+  <!-- Card Container -->
+  <div class="container kelas-content">
+    <div class="row justify-content-center g-4">
 
-      <!-- Website -->
-      <div class="col">
-        <div class="card h-100 text-center shadow-sm">
-          <img
-            src="https://images.shiksha.com/mediadata/ugcDocuments/images/wordpressImages/2021_12_Programming-vs-Web-Development.jpg"
-            class="card-img-top" alt="Kelas Website">
-          <div class="card-body">
-            <h5 class="card-title">Website</h5>
-            <p class="card-text">Belajar bikin website interaktif pakai HTML, CSS, dan JavaScript.</p>
-            <a href="kelas-website.html" class="btn btn-outline-primary">Lihat Detail</a>
-          </div>
+      <!-- Card 1 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="kelas-card text-center p-4">
+          <img src="https://images.shiksha.com/mediadata/ugcDocuments/images/wordpressImages/2021_12_Programming-vs-Web-Development.jpg"
+               class="kelas-icon mb-3" alt="Website" />
+          <h5 class="kelas-title">Website</h5>
+          <p class="kelas-desc">Belajar bikin website interaktif pakai HTML, CSS, dan JavaScript.</p>
         </div>
       </div>
 
-      <!-- Robotika -->
-      <div class="col">
-        <div class="card h-100 text-center shadow-sm">
+      <!-- Card 2 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="kelas-card text-center p-4">
           <img src="https://awsimages.detik.net.id/community/media/visual/2022/04/12/robot-canggih-1.jpeg?w=1200"
-            class="card-img-top" alt="Kelas Robotika">
-          <div class="card-body">
-            <h5 class="card-title">Robotika</h5>
-            <p class="card-text">Eksplorasi dunia robot, sensor, dan mikrokontroler dengan proyek nyata.</p>
-            <a href="kelas-robotika.html" class="btn btn-outline-primary">Lihat Detail</a>
-          </div>
+               class="kelas-icon mb-3" alt="Robotika" />
+          <h5 class="kelas-title">Robotika</h5>
+          <p class="kelas-desc">Eksplorasi dunia robot, sensor, dan mikrokontroler dengan proyek nyata.</p>
         </div>
       </div>
 
-      <!-- Esport -->
-      <div class="col">
-        <div class="card h-100 text-center shadow-sm">
-          <img
-            src="https://www.e-resident.gov.ee/wp-content/uploads/2022/10/what-is-esports-eResidency-1-1-1024x682.jpg"
-            class="card-img-top" alt="Kelas Esport">
-          <div class="card-body">
-            <h5 class="card-title">Esport</h5>
-            <p class="card-text">Belajar strategi, teamwork, dan analisis game kompetitif secara profesional.</p>
-            <a href="kelas-esport.html" class="btn btn-outline-primary">Lihat Detail</a>
-          </div>
+      <!-- Card 3 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="kelas-card text-center p-4">
+          <img src="https://www.e-resident.gov.ee/wp-content/uploads/2022/10/what-is-esports-eResidency-1-1-1024x682.jpg"
+               class="kelas-icon mb-3" alt="Esport" />
+          <h5 class="kelas-title">Esport</h5>
+          <p class="kelas-desc">Belajar strategi, teamwork, dan analisis game kompetitif secara profesional.</p>
         </div>
       </div>
 
-      <!-- Android -->
-      <div class="col">
-        <div class="card h-100 text-center shadow-sm">
+      <!-- Card 4 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="kelas-card text-center p-4">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSse4lIUfC1N3dBiaco7UWs6j_FRHtJ3ARp_Q&s"
-            class="card-img-top" alt="Kelas Android">
-          <div class="card-body">
-            <h5 class="card-title">Android</h5>
-            <p class="card-text">Bikin aplikasi Android sendiri pakai Kotlin atau Java, dari desain sampai publish.</p>
-            <a href="kelas-android.html" class="btn btn-outline-primary">Lihat Detail</a>
-          </div>
+               class="kelas-icon mb-3" alt="Android" />
+          <h5 class="kelas-title">Android</h5>
+          <p class="kelas-desc">Bikin aplikasi Android sendiri pakai Kotlin atau Java, dari desain sampai publish.</p>
         </div>
       </div>
 
     </div>
   </div>
+</section>
+
+
 
   <!-- Highlight -->
   <section style="background-color: #1c1c1c; color: #fff; padding: 60px 20px;">
@@ -180,7 +171,7 @@
     <div class="container">
       <h2 class="text-center mb-4">Projek Terkini</h2>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-    
+
         <div class="col">
           <div class="card h-100 shadow-sm">
             <img src="images/project-website.jpg" class="card-img-top" alt="Website Branding Komunitas">
