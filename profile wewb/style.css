@@ -1,0 +1,307 @@
+body {
+  padding-top: 60px;
+}
+
+/* RESET & GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* SECTION STANDARDIZATION */
+section {
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR */
+.navbar {
+  z-index: 1000;
+}
+
+/* HERO CAROUSEL */
+.hero-carousel {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  color: #fff;
+  overflow: hidden;
+
+  background: linear-gradient(to right, rgba(15, 32, 39, 0.8), rgba(44, 83, 100, 0.8)),
+    url('https://cdn.buttercms.com/resize=w:1600,h:900,fit:crop/cpu8yCigTnagZdCKeB3b');
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(4px);
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  padding: 0 20px;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+.highlight {
+  color: #00ffff;
+}
+
+/* ABOUT US - BETTER SOLUTION */
+.about-section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.about-section .container-fluid {
+  margin: 0;
+  padding: 0;
+  height: 50vh; /* Atur tinggi section */
+  min-height: 400px; /* Tinggi minimum */
+}
+
+.about-section .row {
+  margin: 0;
+  height: 100%;
+}
+
+.about-section .col-lg-6 {
+  padding: 0;
+  height: 100%;
+}
+
+.text-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  height: 100%;
+}
+
+.image-box {
+  height: 100%;
+  overflow: hidden;
+}
+
+.img-full {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* KELAS KITA SECTION */
+.kelas-section {
+  background-color: #fff;
+  padding-bottom: 80px;
+}
+
+.kelas-header {
+  background-color: #252729;
+  /* warna biru elegan */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.kelas-header h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.kelas-header p {
+  font-size: 16px;
+  color: #e0e0e0;
+  margin-bottom: 0;
+}
+
+.kelas-content {
+  margin-top: -40px;
+  /* tarik ke atas biar nyatu */
+}
+
+.kelas-card {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.kelas-card:hover {
+  transform: translateY(-5px);
+}
+
+.kelas-icon {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.kelas-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #203a43;
+  margin-bottom: 10px;
+}
+
+.kelas-desc {
+  font-size: 14px;
+  color: #555;
+}
+
+
+/* PROJECTS SECTION */
+.project-card {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  /* lebih besar */
+  overflow: hidden;
+  border: 1px solid #ccc;
+  /* kotak tegas */
+  border-radius: 0;
+  /* sudut tajam */
+  background-color: #fff;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay muncul saat hover */
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(30, 42, 120, 0.85);
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+/* FAQ PAGE */
+.faq-section {
+  background-color: #eef1f3;
+  padding: 60px 0;
+}
+
+/* accordion styling */
+.accordion-item {
+  border: none;
+  margin-bottom: 12px;
+}
+
+.accordion-button {
+  font-weight: 600;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #1e2a78;
+  color: #fff;
+  border: 1px solid #1e2a78;
+}
+
+.accordion-body {
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: #fff;
+  padding: 15px 20px;
+}
+
+/* CONTACT HIGHLIGHT */
+.contact-highlight {
+  background-color: #1e2a78;
+}
+
+.contact-highlight h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.contact-highlight p {
+  font-size: 18px;
+}
+
+.contact-highlight i {
+  margin-right: 6px;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.contact-highlight .btn {
+  background-color: #ffffff;
+  color: #1e2a78;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 12px 24px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-highlight .btn:hover {
+  background-color: #f2f2f2;
+}
+
+/* FOOTER */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1; /* dorong footer ke bawah */
+  padding-top: 70px; /* jika ada fixed navbar */
+}
+
+.footer {
+  background-color: #0f2027;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}
