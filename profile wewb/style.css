@@ -1,0 +1,443 @@
+body {
+padding-top: 0 !important
+}
+
+/* RESET & GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* SECTION STANDARDIZATION */
+section {
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR */
+.navbar {
+  z-index: 1000;
+}
+
+/* HERO CAROUSEL */
+.hero-carousel {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  color: #fff;
+  overflow: hidden;
+
+  background: linear-gradient(to right, rgba(15, 32, 39, 0.8), rgba(44, 83, 100, 0.8)),
+    url('https://cdn.buttercms.com/resize=w:1600,h:900,fit:crop/cpu8yCigTnagZdCKeB3b');
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(4px);
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  padding: 0 20px;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+.highlight {
+  color: #00ffff;
+}
+
+/* ABOUT US - BETTER SOLUTION */
+.about-section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.about-section .container-fluid {
+  margin: 0;
+  padding: 0;
+  height: 50vh; /* Atur tinggi section */
+  min-height: 400px; /* Tinggi minimum */
+}
+
+.about-section .row {
+  margin: 0;
+  height: 100%;
+}
+
+.about-section .col-lg-6 {
+  padding: 0;
+  height: 100%;
+}
+
+.text-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  height: 100%;
+}
+
+.image-box {
+  height: 100%;
+  overflow: hidden;
+}
+
+.img-full {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* ===== KELAS SECTION STYLING ===== */
+.kelas-section {
+  padding: 0 !important; /* Hilangkan padding */
+  margin: 0 !important; /* Hilangkan margin */
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.kelas-header {
+  background: linear-gradient(135deg, #1e2a78 0%, #2c3e50 100%);
+  color: white;
+  padding: 50px 20px;
+  margin-bottom: 40px;
+}
+
+.kelas-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.kelas-subtext {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.kelas-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.kelas-card-link:hover {
+  text-decoration: none;
+  color: inherit;
+  transform: translateY(-5px);
+}
+
+.kelas-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.kelas-card-link:hover .kelas-card {
+  border-color: #1e2a78;
+  box-shadow: 0 12px 35px rgba(30, 42, 120, 0.2);
+  transform: translateY(-5px);
+}
+
+.kelas-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(30, 42, 120, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.kelas-card-link:hover .kelas-card::before {
+  left: 100%;
+}
+
+.kelas-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.kelas-card-link:hover .kelas-icon {
+  transform: scale(1.1);
+}
+
+.kelas-title {
+  color: #1e2a78;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.kelas-desc {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.kelas-content {
+  padding: 40px 15px 60px;
+}
+
+.kelas-cta {
+  color: #1e2a78;
+  font-weight: 600;
+  font-size: 0.9rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.kelas-card-link:hover .kelas-cta {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .kelas-heading {
+    font-size: 2rem;
+  }
+  
+  .kelas-subtext {
+    font-size: 1rem;
+  }
+  
+  .kelas-card {
+    margin-bottom: 20px;
+  }
+}
+
+/* PROJECTS SECTION */
+.project-card {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  /* lebih besar */
+  overflow: hidden;
+  border: 1px solid #ccc;
+  /* kotak tegas */
+  border-radius: 0;
+  /* sudut tajam */
+  background-color: #fff;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay muncul saat hover */
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(30, 42, 120, 0.85);
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+/* ===== FAQ SECTION ===== */
+body {
+  padding-top: 80px; /* Compensation for fixed navbar */
+}
+
+.faq-section {
+  background-color: #f8f9fa;
+  padding: 0;
+  margin: -30px 0 0 0; /* Remove gap from navbar */
+}
+
+.faq-section .container {
+  padding: 40px 15px;
+}
+
+.faq-section h2 {
+  color: #1e2a78;
+  font-weight: 700;
+  margin-bottom: 35px;
+  font-size: 2.2rem;
+}
+
+/* Accordion Styling */
+.accordion {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.accordion-item {
+  border: none;
+  border-radius: 8px !important;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.accordion-button {
+  background-color: #ffffff;
+  color: #1e2a78;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 20px;
+  border: none;
+  border-radius: 8px 8px 0 0 !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #1e2a78;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px 8px 0 0 !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%231e2a78'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-body {
+  background-color: #ffffff;
+  color: #333;
+  padding: 20px;
+  border-top: 1px solid #e9ecef;
+  border-radius: 0 0 8px 8px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-section .container {
+    padding: 30px 15px;
+  }
+  
+  .faq-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+  
+  .accordion-button {
+    padding: 15px;
+    font-size: 1rem;
+  }
+  
+  .accordion-body {
+    padding: 15px;
+  }
+}
+
+/* CONTACT HIGHLIGHT */
+.contact-highlight {
+  background-color: #1e2a78;
+}
+
+.contact-highlight h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.contact-highlight p {
+  font-size: 18px;
+}
+
+.contact-highlight i {
+  margin-right: 6px;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.contact-highlight .btn {
+  background-color: #ffffff;
+  color: #1e2a78;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 12px 24px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-highlight .btn:hover {
+  background-color: #f2f2f2;
+}
+
+/* FOOTER */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1; /* dorong footer ke bawah */
+  padding-top: 70px; /* jika ada fixed navbar */
+}
+
+.footer {
+  background-color: #0f2027;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}
